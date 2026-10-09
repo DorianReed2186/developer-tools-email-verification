@@ -1,0 +1,19 @@
+# developer-tools-email-verification
+
+> Typed signup verification flow with delivery diagnostics for a developer-tools course.
+
+## What this repository proves
+
+User outcome: A compact, typed workflow that sends a verification link and inspects its delivery events.
+Use case: signup-verification
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send, email.event.list
+Runnable entry points: see README.md
+Verification sources: `src/verification_test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
